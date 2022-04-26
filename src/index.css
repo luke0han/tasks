@@ -1,13 +1,202 @@
 body {
+  font-family: 'Comfortaa', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #24272b;
+  color: #be4f4f;
+  width: 100%;
+  font-size: 150%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+    list-style: none;
+    text-decoration: none;
+    color:#fff
+}
+a:hover{
+    list-style: none;
+    text-decoration: underline;
+    color:#24272b;
+}
+
+svg:hover {
+  color: #fff;
+}
+h1 {
+  font-size: 2.3rem;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 20px;
+}
+/* .btn-primary {
+    color:#be4f4f;
+    background-color: #fff;
+}
+
+.btn-secondary {
+    color:#be4f4f;
+    background-color: #24272b;
+} */
+th {
+  font-size: 1em;
+  text-align: center;
+}
+td.time {
+  color: #be4f4f;
+  /* padding-left: 1em; */
+  /* font-size: 0.8em; */
+}
+.deleteBtn {
+  color: #be4f4f;
+  padding: 0 !important;
+  font-size:1em;
+}
+.task {
+  color: #be4f4f;
+}
+td {
+    font-size: .7em;
+}
+th,
+td {
+  padding: 50px;
+}
+.btn {
+  background-color: #24272b;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #24272b;
+  border: none;
+}
+
+.modal-content {
+  background-color: #be4f4f;
+  /* font-family:  'Comfortaa', cursive; */
+  color: #24272b;
+}
+
+
+.addedAlert, .editAlert {
+    color: #be4f4f;
+    background-color: #353535;
+    border: 1px solid #353535;;
+}
+
+.errorAlert, .deleteAlert {
+    background-color: #be4f4f;
+    color: #353535;
+    border: 1px solid #353535;;
+}
+
+.addedAlertWrap, .editAlertWrap, .deleteAlertWrap, .errorAlertWrap {
+    top: 10px;
+    display: flex;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out;
+}
+
+.addedAlertWrap.active, .editAlertWrap.active, .deleteAlertWrap.active, .errorAlertWrap.active {
+    top: 10px;
+    display: flex;
+    position: absolute;
+    transform: translateX(0%);
+}
+
+.clearAllBtn {
+    background-color: #be4f4f;
+    position: absolute;
+    font-size: 1.1em;
+    width: 100%;
+    bottom: 0;
+}
+.clearAllBtn:active, .clearAllBtn:hover, .clearAllBtn::after {
+    color: #be4f4f;
+    background-color: #fff;
+    position: absolute;
+    font-size: 1.1em;
+    width: 100%;
+    bottom: 0;
+}
+
+.offcanvas{
+    background-color: #be4f4f;
+    color:#fff;
+    width: 70%;
+    
+}
+
+.offcanvas .offcanvas-header{
+    background-color: #be4f4f;
+    color:#24272b;
+    font-size: large;
+    border-bottom: #24272b 1px solid;
+    /* padding-left: 30%; */
+}
+
+.offcanvas-body ul{
+    list-style: none;
+}
+.offcanvas-body li{
+   text-align: center;
+   padding: 20px;
+}
+.offcanvas-body li:active{
+    color:#24272b;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
+ }
+.offcanvas-body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 25% 10px */
+}
+
+.offcanvas-list {
+    display:flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    /* padding: 25% 10px */
+}
+
+.offcanvas-title {
+font-size: 1.3em;
+}
+
+.logout-btn {
+    font-size: .9em;
+    width: 100%;
+}
+
+
+
+
+
+.login-wrap{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+   
+    font-size: 3em;
+    
+}
+.items-wrap {
+    padding-left: 20px !important;
+    color:#be4f4f;
+}
+.delete-icon-wrap{
+    color: #be4f4f;
+    width: 50px;
 }
