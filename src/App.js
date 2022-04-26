@@ -12,7 +12,7 @@ import { signOut } from 'firebase/auth'
 import { Modal, Button, Alert, Form } from 'react-bootstrap'
 import { addDoc, serverTimestamp } from 'firebase/firestore'
 import { colRef, listRef } from './firebase'
-import { VscAdd } from 'react-icons/vsc'
+// import { VscAdd } from 'react-icons/vsc'
 
 
 import Header from './components/Header'
@@ -85,7 +85,7 @@ const App = () => {
           path="/"
           element={
               <>
-               <Header title="Schedule"  setShow={setShow} icon={<VscAdd onClick={handleShow} />} shows={shows} setShows={setShows}  isAuth={isAuth} signUserOut={signUserOut} setAddAlertShow={setAddAlertShow} />
+               <Header title="Schedule"  setShow={setShow} icon={<Button onClick={handleShow} />} shows={shows} setShows={setShows}  isAuth={isAuth} signUserOut={signUserOut} setAddAlertShow={setAddAlertShow} />
                <TableInfo
               setEditAlertShow={setEditAlertShow}
               setDeleteAlertShow={setDeleteAlertShow}
@@ -97,7 +97,7 @@ const App = () => {
         />
         <Route path="/lists" element={
         <>
-        <Header title="Lists" setSho={setSho} icon={<VscAdd onClick={handleSho} />} signUserOut={signUserOut} setAddAlertShow={setAddAlertShow} />
+        <Header title="Lists" setSho={setSho} icon={<Button onClick={handleSho} />} signUserOut={signUserOut} setAddAlertShow={setAddAlertShow} />
         <Lists setEditAlertShow={setEditAlertShow}
               setDeleteAlertShow={setDeleteAlertShow}
               setErrorAlertShow={setErrorAlertShow} />

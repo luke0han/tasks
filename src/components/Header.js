@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // import { Navbar, Button } from 'react-bootstrap'
-import { VscListFlat } from 'react-icons/vsc'
+// import { VscListFlat } from 'react-icons/vsc'
 import { Link, useNavigate } from 'react-router-dom'
 import { signOut, onAuthStateChanged } from 'firebase/auth'
 import { auth } from '../firebase'
@@ -35,7 +35,7 @@ let navigate = useNavigate()
   return (
       
     <div className="header-wrap">
-      <VscListFlat onClick={() => setShows(true)} />
+      <Button onClick={() => setShows(true)} />
       <h1>{title}</h1>
       {icon}
       
